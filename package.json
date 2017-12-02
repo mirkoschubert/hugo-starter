@@ -1,0 +1,11 @@
+{
+  "name": "hugo-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": "https://github.com/mirkoschubert/hugo-starter.git",
+  "author": "Mirko Schubert <mirkoschubert@gmail.com>",
+  "license": "MIT"
+}
