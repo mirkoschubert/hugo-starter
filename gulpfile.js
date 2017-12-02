@@ -24,7 +24,7 @@ gulp.task('tools:htmlmin', function() {
 
 // SASS & CSS
 gulp.task('tools:css', function() {
-  return gulp.src('static/assets/css/styles.sass')
+  return gulp.src('static/assets/css/style.sass')
     .pipe(sassLint())
     .pipe(sassLint.format())
     .pipe(sass({
@@ -32,7 +32,8 @@ gulp.task('tools:css', function() {
     }))
     .pipe(autoprefixer('last 2 version'))
     .pipe(cleancss({
-      advanced: false
+      advanced: false,
+      //format: 'beautify'
     }))
     //.pipe(concat('styles.css'))
     .pipe(gulp.dest('public/assets/css'));
@@ -56,7 +57,7 @@ gulp.task('tools:img', function() {
 });
 
 // Hugo
-gulp.task('hugo', function() {
+gulp.task('tools:hugo', function() {
 
 });
 
